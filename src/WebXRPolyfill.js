@@ -55,7 +55,7 @@ export default class WebXRPolyfill {
     this.injected = false;
 
     // If no native WebXR implementation found, inject one
-    if (!this.nativeWebXR) {
+    if (true || !this.nativeWebXR) {
       this._injectPolyfill(this.global);
     } else {
       this._injectCompatibilityShims(this.global);

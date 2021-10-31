@@ -31,7 +31,7 @@ const contextTypes = ['webgl', 'experimental-webgl'];
  */
 export const polyfillMakeXRCompatible = Context => {
   if (typeof Context.prototype.makeXRCompatible === 'function') {
-    return false;
+    // return false;
   }
 
   // Create `makeXRCompatible` and if successful, store
